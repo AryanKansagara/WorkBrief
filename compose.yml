@@ -1,0 +1,11 @@
+services:
+  web:
+    build: .
+    ports: ["127.0.0.1:3000:3000"]
+    environment:
+      BRIEF_SERVICE_URL: http://brief:8089
+    depends_on: [brief]
+  brief:
+    build: ./backend
+    environment:
+      BRIEF_MODE: offline

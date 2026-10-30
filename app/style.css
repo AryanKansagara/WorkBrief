@@ -1,0 +1,138 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  background: #f5f2eb;
+  color: #182e39;
+  font:
+    16px/1.6 system-ui,
+    sans-serif;
+}
+main {
+  max-width: 1160px;
+  margin: auto;
+  padding: 46px 28px;
+}
+.eyebrow {
+  font-size: 12px;
+  letter-spacing: 2px;
+  color: #426773;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  gap: 40px;
+}
+h1 {
+  font-size: 44px;
+  line-height: 1.12;
+  letter-spacing: -1.6px;
+  margin: 16px 0 28px;
+}
+header p {
+  max-width: 240px;
+  color: #526a73;
+}
+aside {
+  padding: 15px 20px;
+  background: #e1e8e3;
+  border-left: 3px solid #35665b;
+  font-size: 13px;
+  margin: 20px 0 30px;
+}
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+}
+section {
+  padding: 28px;
+  background: white;
+  border: 1px solid #d6ddd8;
+  border-radius: 12px;
+  min-width: 0;
+}
+h2 {
+  font-size: 16px;
+  margin: 0 0 24px;
+}
+h3 {
+  font-size: 15px;
+  margin-top: 25px;
+}
+label {
+  font-size: 14px;
+  display: block;
+}
+textarea {
+  width: 100%;
+  margin-top: 8px;
+  padding: 14px;
+  border: 1px solid #8ca2a7;
+  border-radius: 6px;
+  font:
+    14px/1.7 ui-monospace,
+    monospace;
+  resize: vertical;
+}
+button {
+  background: #173f4b;
+  color: white;
+  border: 0;
+  padding: 12px 20px;
+  border-radius: 6px;
+  font: 600 14px system-ui;
+  cursor: pointer;
+}
+button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+:focus-visible {
+  outline: 3px solid #bc6b27;
+  outline-offset: 4px;
+}
+section p,
+li {
+  font-size: 14px;
+}
+section p {
+  color: #536974;
+}
+.badge {
+  font-size: 12px;
+  padding: 6px 10px;
+  background: #edf3ee;
+  display: inline-block;
+}
+.empty {
+  padding: 60px 20px;
+  text-align: center;
+}
+.check {
+  display: flex;
+  align-items: start;
+  gap: 8px;
+  margin: 30px 0 18px;
+}
+footer {
+  font-size: 12px;
+  color: #526a73;
+  padding-top: 25px;
+}
+@media (max-width: 750px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+  header {
+    display: block;
+  }
+  h1 {
+    font-size: 34px;
+  }
+  main {
+    padding: 24px 16px;
+  }
+}
